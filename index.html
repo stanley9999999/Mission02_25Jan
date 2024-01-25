@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="classLoader.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    
+
+<nav class="menu">
+    <ul>
+        <li><img src="images/Graphics/SJ.png"></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+
+<main>  
+
+    <div class="form-container">
+    <h2>NEW Users</h2>
+
+    <form id="userDataForm">
+        <label for="firstName">First name:</label>
+        <input type="text" id="firstName" name="firstName" required><br>
+        
+        <label for="lastName">last name:</label>
+        <input type="text" id="lastName" name="lastName" required><br>
+
+        <label for="jobDesc">Position:</label>
+        <input type="text" id="jobDesc" name="jobDesc" required><br>
+
+        <label for="jobArea">Area:</label>
+        <input type="text" id="jobArea" name="jobArea" required><br>
+
+        <label for="imageName">Image File Name:</label>
+        <input type="text" id="imageName" name="imageName" required><br>
+
+        <button type="button" onclick="addUser()">Add User</button>
+
+        
+        <h2>peopleArray:</h2>
+        <pre id="peopleArrayOutput"></pre>
+
+    </form>
+    
+    </div>
+
+    <div class="form-container">
+        <h2>User Data (Grid): [     
+            <!-- Button to trigger the renderGrid function -->
+            <button onclick="renderGrid()">Refresh</button>  ]
+        </h2>
+        <div class="grid-container" id="gridContainer"></div>
+    
+    </div>
+
+
+
+
+</main>
+    
+</body>
+</html>
